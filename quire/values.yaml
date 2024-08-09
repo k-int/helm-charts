@@ -14,6 +14,8 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+managementAPI: "https://kiconsole-api.avk8s.k-int.com"
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: true

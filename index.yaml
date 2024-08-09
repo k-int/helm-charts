@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   quire:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2024-08-09T12:31:28.663397907+01:00"
+    appVersion: native-0.1
+    created: "2024-08-09T12:35:42.453581806+01:00"
     description: A Helm chart to provision a Quire instance
-    digest: 12c2ae27452fffa42eb7e78f6abc9f7a48e422347a924db02a32d85653fd9849
+    digest: 3ed9f97d20e3fd77725ce90cb7a72b0c55828b72551c2f0fdd1bf3fb87caa102
     name: quire
     type: application
     urls:
-    - https://k-int.github.io/helm-charts/quire-0.1.0.tgz
+    - quire-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-09T12:31:28.661842405+01:00"
+generated: "2024-08-09T12:35:42.450138864+01:00"

@@ -15,6 +15,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 managementAPI: "https://kiconsole-api.avk8s.k-int.com"
+quireOperatingMode: "Developer"
 
 serviceAccount:
   # Specifies whether a service account should be created

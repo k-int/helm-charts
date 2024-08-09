@@ -3,12 +3,12 @@ entries:
   quire:
   - apiVersion: v2
     appVersion: native-0.1
-    created: "2024-08-09T15:04:54.841437512+01:00"
+    created: "2024-08-09T15:34:51.49589606+01:00"
     description: A Helm chart to provision a Quire instance
-    digest: d5df2b6478fa29a2b53cac79a5f510452adfd02d99d6557c433ae1507ddb47f7
+    digest: a5ca256454d9b5f0b77e77fd8dadfd90cf3d078f3afb189cf1abcaa46355d7fa
     name: quire
     type: application
     urls:
     - quire-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-09T15:04:54.840926119+01:00"
+generated: "2024-08-09T15:34:51.495125462+01:00"

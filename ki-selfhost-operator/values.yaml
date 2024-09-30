@@ -9,7 +9,7 @@ selfHostOpBootstrapToken: "none"
 
 image:
   repository: docker.libsdev.k-int.com/knowledgeintegration/ki-selfhost-operator
-  pullPolicy: Latest
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v1"
 

@@ -3,4 +3,6 @@ kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-configmap
 data:
-  secretValue: {{ .Values.selfHostOpBootstrapToken | quote }}
+  KISELFHOSTOP_BOOTSTRAP_TOKEN: {{ .Values.selfHostOpBootstrapToken | quote }}
+  KISELFHOSTOP_MGT_API: https://kiconsole-api.avk8s.k-int.com
+  KISELFHOSTOP_OPERATING_MODE: developer

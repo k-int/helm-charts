@@ -1,0 +1,6 @@
+dependencies:
+- name: pgo
+  repository: oci://registry.developers.crunchydata.com/crunchydata
+  version: 5.6.1
+digest: sha256:03c3b918e239b4ccfb544a104cf210917916f65d15e1612c2a34c8cea9c0c8a8
+generated: "2024-10-02T12:06:47.493017173+01:00"

@@ -2,5 +2,8 @@ dependencies:
 - name: pgo
   repository: oci://registry.developers.crunchydata.com/crunchydata
   version: 5.6.1
-digest: sha256:03c3b918e239b4ccfb544a104cf210917916f65d15e1612c2a34c8cea9c0c8a8
-generated: "2024-10-02T12:06:47.493017173+01:00"
+- name: gateway-operator
+  repository: https://charts.konghq.com
+  version: 0.2.1
+digest: sha256:730ad07552645f100adc0235256781bf0d7dbba72627388fff6381932f9b4f6b
+generated: "2024-10-02T12:44:37.310920269+01:00"

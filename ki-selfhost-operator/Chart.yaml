@@ -34,3 +34,4 @@ dependencies:
     version: 0.2.1
     repository: https://charts.konghq.com
     condition: kongOperator.enabled
+    # https://strimzi.io/quickstarts/ - Kafka op

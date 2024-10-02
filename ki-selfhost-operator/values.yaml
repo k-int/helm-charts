@@ -121,3 +121,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+# Optionally install the postgres operator in a namesapce
+# See https://access.crunchydata.com/documentation/postgres-operator/latest/installation/helm
+postgresOperator:
+  enabled: true # Whether to install the PostgreSQL Operator (PGO)

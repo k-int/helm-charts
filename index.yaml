@@ -2,8 +2,23 @@ apiVersion: v1
 entries:
   ki-selfhost-operator:
   - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-10-02T12:08:36.043981944+01:00"
+    dependencies:
+    - condition: postgresOperator.enabled
+      name: pgo
+      repository: oci://registry.developers.crunchydata.com/crunchydata
+      version: 5.6.1
+    description: A Helm chart the Knowledge Integration Self-Hosting Operator
+    digest: 514410f50e16b87a765053d6e919558381ef2637b95482df8e0ea024dea1ab28
+    name: ki-selfhost-operator
+    type: application
+    urls:
+    - ki-selfhost-operator-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-02T09:07:46.022084366+01:00"
+    created: "2024-10-02T12:08:36.040719802+01:00"
     description: A Helm chart for Kubernetes
     digest: fb309156e9202e7975a318d602e6e173d94ef27642faf4031c05bf2d6daaa90c
     name: ki-selfhost-operator
@@ -14,12 +29,12 @@ entries:
   quire:
   - apiVersion: v2
     appVersion: native-0.1
-    created: "2024-10-02T09:07:46.02271873+01:00"
+    created: "2024-10-02T12:08:36.044304043+01:00"
     description: A Helm chart to provision a Quire instance
-    digest: e24a638c9c77229a513dd26291e64199f7d33e3586468ad26de1da23482e70f3
+    digest: b6878694f53bfc4b88fd0f00bc61be1cb269b1a92ce2ab9242b39c86ffe68c63
     name: quire
     type: application
     urls:
     - quire-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-02T09:07:46.021490935+01:00"
+generated: "2024-10-02T12:08:36.040098296+01:00"

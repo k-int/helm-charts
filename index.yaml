@@ -3,9 +3,9 @@ entries:
   ki-selfhost-operator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-09-30T18:35:00.388867054+01:00"
+    created: "2024-10-02T09:07:46.022084366+01:00"
     description: A Helm chart for Kubernetes
-    digest: cf333ac653c65a069ad03280bc3157aba2c2ce0263a9dd96d55fd76e1adcaafd
+    digest: fb309156e9202e7975a318d602e6e173d94ef27642faf4031c05bf2d6daaa90c
     name: ki-selfhost-operator
     type: application
     urls:
@@ -14,12 +14,12 @@ entries:
   quire:
   - apiVersion: v2
     appVersion: native-0.1
-    created: "2024-09-30T18:35:00.38939287+01:00"
+    created: "2024-10-02T09:07:46.02271873+01:00"
     description: A Helm chart to provision a Quire instance
-    digest: 4844cc14304cf16421da0081d30367ab383be3e7f76ea617db043b088dab787c
+    digest: e24a638c9c77229a513dd26291e64199f7d33e3586468ad26de1da23482e70f3
     name: quire
     type: application
     urls:
     - quire-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-30T18:35:00.388120331+01:00"
+generated: "2024-10-02T09:07:46.021490935+01:00"

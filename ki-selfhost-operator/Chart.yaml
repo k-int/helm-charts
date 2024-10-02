@@ -35,3 +35,8 @@ dependencies:
     repository: https://charts.konghq.com
     condition: kongOperator.enabled
     # https://strimzi.io/quickstarts/ - Kafka op
+  - name: eck-operator
+    repository: https://helm.elastic.co
+    condition: elasticSearchOperator.enabled
+    version: 2.14.0
+

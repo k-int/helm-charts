@@ -5,5 +5,8 @@ dependencies:
 - name: gateway-operator
   repository: https://charts.konghq.com
   version: 0.2.1
-digest: sha256:730ad07552645f100adc0235256781bf0d7dbba72627388fff6381932f9b4f6b
-generated: "2024-10-02T12:44:37.310920269+01:00"
+- name: eck-operator
+  repository: https://helm.elastic.co
+  version: 2.14.0
+digest: sha256:2fae634a902ec33992812f126fc072001d9c7ce4abd89212b751e1cbfd515202
+generated: "2024-10-02T14:56:01.618323675+01:00"

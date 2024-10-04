@@ -89,11 +89,11 @@ resources: {}
 livenessProbe:
   httpGet:
     path: /health/liveness
-    port: http
+    port: javahttp
 readinessProbe:
   httpGet:
     path: /health/readiness
-    port: http
+    port: javahttp
 
 #This section is for setting up autoscaling more information can be found here: https://kubernetes.io/docs/concepts/workloads/autoscaling/
 autoscaling:

@@ -8,4 +8,3 @@ rules:
   - apiGroups: [""]
     resources: ["services", "endpoints", "configmaps", "secrets", "pods"]
     verbs: ["get", "watch", "list"]
-{{- end }}

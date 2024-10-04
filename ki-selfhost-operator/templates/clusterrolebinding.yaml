@@ -6,10 +6,9 @@ metadata:
     {{- include "ki-selfhost-operator.labels" . | nindent 4 }}
 subjects:
   - kind: ServiceAccount
-    name: ki-selfhost-operator
+    name: {{ include "ki-selfhost-operator.serviceAccountName" . }}
     namespace: {{ .Release.Namespace }}
 roleRef:
   kind: ClusterRole
   name: service-discoverer
   apiGroup: rbac.authorization.k8s.io
-{{- end }}

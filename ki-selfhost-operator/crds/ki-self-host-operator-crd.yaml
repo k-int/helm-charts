@@ -24,7 +24,9 @@ spec:
               properties:
                 replicas:
                   type: integer
-                image:
+                managementApiUrl:
+                  type: string
+                contextRegistrationToken:
                   type: string
             status:
               type: object
@@ -33,3 +35,7 @@ spec:
                   type: string
                 replicas:
                   type: integer
+                contextPrivKey:
+                  type: string
+                contextPubKey:
+                  type: string

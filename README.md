@@ -32,3 +32,10 @@ Create managed namespaces with the command
     kubectl label namespace namespace1 pgo-managed=true
 
 
+### Kong Gateway
+
+    helm repo add kong https://charts.konghq.com
+    helm repo update kong
+    helm install kong-operator kong/gateway-operator \
+      --namespace kong-operator \
+      --create-namespace

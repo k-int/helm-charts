@@ -1,5 +1,11 @@
 
 
+General
+
+Advice: If using rancher desktop, please disable traefik installation, this distribution
+relies upon the kong ingress gateway. Whilst the two can coexist given sufficient
+load balancer resources, it is less confusing to install only one.
+
 Update chart with
 
     helm dependency update ./ki-selfhost-operator  (Or build)
@@ -31,6 +37,8 @@ Create managed namespaces with the command
     kubectl create namespace namespace1
     kubectl label namespace namespace1 pgo-managed=true
 
+We use the managed namespace approach in case there is a need/desire to switch to
+CloudNativePG in the future.
 
 ### Kong Gateway
 
@@ -39,3 +47,9 @@ Create managed namespaces with the command
     helm install kong-operator kong/gateway-operator \
       --namespace kong-operator \
       --create-namespace
+
+### ECK Operator
+
+    helm repo add elastic https://helm.elastic.co
+    helm repo update 
+    helm install elastic-operator elastic/eck-operator -n elastic-system --create-namespace

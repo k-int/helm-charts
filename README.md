@@ -12,6 +12,12 @@ Update chart with
     helm package quire ki-selfhost-operator
     helm repo index .
 
+## Usage
+
+helm repo add https://k-int.github.io/helm-charts/
+helm repo update
+helm show values k-int/ki-selfhost-operator > my-values.yaml
+helm install folio1 k-int/ki-selfhost-operator --values my-values.yaml --namespace folio1 --create-namespace
 
 # Quire
 
@@ -20,33 +26,6 @@ Can be run stand-alone or installed by the selfhost operator.
 ## Quire Standalone
 
 Needs kong gateway, pgo and elasticsearch as dependencies. 
-
-### PGO
-
-The following command installs PGO and uses it to manage postgres installations
-in any namespace created with pgo-managed=true
-
-    helm install pgo oci://registry.developers.crunchydata.com/crunchydata/pgo \
-      --namespace pgo \
-      --create-namespace \
-      --set global.namespace="" \
-      --set pgo.namespaceSelector.matchLabels.pgo-managed=true
-
-Create managed namespaces with the command
-
-    kubectl create namespace namespace1
-    kubectl label namespace namespace1 pgo-managed=true
-
-We use the managed namespace approach in case there is a need/desire to switch to
-CloudNativePG in the future.
-
-### Kong Gateway
-
-    helm repo add kong https://charts.konghq.com
-    helm repo update kong
-    helm install kong-operator kong/gateway-operator \
-      --namespace kong-operator \
-      --create-namespace
 
 ### ECK Operator
 

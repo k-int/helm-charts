@@ -1,0 +1,18 @@
+apiVersion: gateway-operator.konghq.com/v1beta1
+kind: DataPlane
+metadata:
+  name: ki-selfhost-dataplane
+spec:
+  gatewayConfigurationRef:
+    name: kong-gateway-config
+  deployment:
+    replicas: 1
+  podTemplate:
+    containers:
+      - name: proxy
+        env:
+          - name: KONG_PLUGINS
+            value: bundled,tenant-router
+        image:
+          repository: docker.libsdev.k-int.com/knowledgeintegration/kong-ki-selfhost-router
+          tag: latest

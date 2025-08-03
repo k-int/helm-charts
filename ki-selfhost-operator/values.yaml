@@ -37,7 +37,7 @@ podAnnotations: {}
 # This is for setting Kubernetes Labels to a Pod.
 # For more information checkout: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 podLabels: 
-  - ki-selfhost-operator
+  app.kubernetes.io/name: ki-selfhost-operator
 
 podSecurityContext: {}
   # fsGroup: 2000

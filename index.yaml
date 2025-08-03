@@ -3,14 +3,14 @@ entries:
   ki-selfhost-operator:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-03T12:39:37.343748607+01:00"
+    created: "2025-08-03T17:14:33.648885168+01:00"
     dependencies:
     - condition: elasticSearchOperator.enabled
       name: eck-operator
       repository: https://helm.elastic.co
       version: 2.14.0
     description: A Helm chart the Knowledge Integration Self-Hosting Operator
-    digest: cbc90fb203e0b31b9c3bf28b49850bf0329b3a0774f3fcf97d63c0801ca1b9b4
+    digest: fb5528eaef9d3f42c6495af6bb49ae29b7feb0001100f94b0c0c1cb50f94eaaa
     name: ki-selfhost-operator
     type: application
     urls:
@@ -18,7 +18,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-03T12:39:37.320312937+01:00"
+    created: "2025-08-03T17:14:33.632366473+01:00"
     dependencies:
     - condition: postgresOperator.enabled
       name: pgo
@@ -41,7 +41,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-08-03T12:39:37.228316186+01:00"
+    created: "2025-08-03T17:14:33.484900748+01:00"
     description: A Helm chart for Kubernetes
     digest: fb309156e9202e7975a318d602e6e173d94ef27642faf4031c05bf2d6daaa90c
     name: ki-selfhost-operator
@@ -52,12 +52,12 @@ entries:
   quire:
   - apiVersion: v2
     appVersion: native-0.1
-    created: "2025-08-03T12:39:37.345003944+01:00"
+    created: "2025-08-03T17:14:33.650195533+01:00"
     description: A Helm chart to provision a Quire instance
-    digest: 88a4fdbedcfe6a79d1007eeea82fc0c7d80685804e37281a5eb8e057ae9d3c84
+    digest: 8b7030b8c06426914a8aaa90a4d459603a76bd6d1322fc6ea3e3b85b238f6964
     name: quire
     type: application
     urls:
     - quire-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-03T12:39:37.209462147+01:00"
+generated: "2025-08-03T17:14:33.221742484+01:00"

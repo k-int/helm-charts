@@ -15,10 +15,17 @@ description: A Helm chart the Knowledge Integration Self-Hosting Operator
 #     https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/release-1.26/releases/cnpg-1.26.1.yaml
 #
 # Kong API Gateway Operator
+#
 # https://developer.konghq.com/operator/dataplanes/get-started/hybrid/install/
+#
 # kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml
+#
 # helm repo add kong https://charts.konghq.com
+#
 # helm repo update kong
+#
+# PENDING helm show values kong/gateway-operator > values.yaml
+#
 # helm upgrade --install kgo kong/gateway-operator -n kong-system --create-namespace  \
 #  --set image.tag=1.6.1 \
 #  --set kubernetes-configuration-crds.enabled=true \

@@ -2,6 +2,4 @@ apiVersion: gateway-operator.konghq.com/v1beta1
 kind: GatewayConfiguration
 metadata:
   name: kong-gateway-config
-  namespace: kong-system
 spec:
-  gatewayClassName: kong

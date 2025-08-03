@@ -1,5 +1,22 @@
-apiVersion: gateway-operator.konghq.com/v1beta1
 kind: GatewayConfiguration
+apiVersion: gateway-operator.konghq.com/v1beta1
 metadata:
   name: kong-gateway-config
 spec:
+  dataPlaneOptions:
+     deployment:
+        replicas: 2
+        podTemplateSpec:
+          spec:
+             containers:
+                - name: proxy
+                  image: kong/kong-gateway:3.11
+     pluginsToInstall:
+        - name: kong-ki-selfhost-router
+  controlPlaneOptions:
+     deployment:
+        podTemplateSpec:
+          spec:
+             containers:
+                - name: controller
+                  image: kong/kubernetes-ingress-controller:3.4

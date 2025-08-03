@@ -1,12 +1,6 @@
 dependencies:
-- name: pgo
-  repository: oci://registry.developers.crunchydata.com/crunchydata
-  version: 5.6.1
-- name: gateway-operator
-  repository: https://charts.konghq.com
-  version: 0.2.1
 - name: eck-operator
   repository: https://helm.elastic.co
   version: 2.14.0
-digest: sha256:2fae634a902ec33992812f126fc072001d9c7ce4abd89212b751e1cbfd515202
-generated: "2024-10-02T14:56:01.618323675+01:00"
+digest: sha256:393de2ba7ba2f4b088a4620e0c82f93a04254552fbde269cec3149ae5202924f
+generated: "2025-08-03T12:39:26.714886953+01:00"

@@ -2,6 +2,27 @@ apiVersion: v2
 name: ki-selfhost-operator
 description: A Helm chart the Knowledge Integration Self-Hosting Operator
 
+
+# NON-HELM DEPENDENCIES
+#
+# K3D: k3d cluster create kong-dev \\n  --api-port 6550 \\n  -p "8080:80@loadbalancer" \\n  -p "8443:443@loadbalancer" \\n  --k3s-arg "--disable=traefik@server:0"
+#
+# CNPG - Cloud Native Postgres Operator
+#
+# https://cloudnative-pg.io/documentation/current/installation_upgrade/
+#
+#   kubectl apply --server-side -f \
+#     https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/release-1.26/releases/cnpg-1.26.1.yaml
+#
+# Kong API Gateway Operator
+# 
+# helm upgrade --install kgo kong/gateway-operator -n kong-system --create-namespace  \
+#  --set image.tag=1.6.1 \
+#  --set kubernetes-configuration-crds.enabled=true \
+#  --set env.ENABLE_CONTROLLER_KONNECT=true
+#
+#
+
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives
@@ -15,7 +36,7 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.1.1
+version: 0.2.0
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
@@ -25,16 +46,6 @@ appVersion: "1.0.0"
 
 
 dependencies:
-  - name: pgo
-    version: 5.6.1
-    repository: oci://registry.developers.crunchydata.com/crunchydata
-    condition: postgresOperator.enabled
-  - name: gateway-operator
-    # curl https://charts.konghq.com/index.yaml | grep operator
-    version: 0.2.1
-    repository: https://charts.konghq.com
-    condition: kongOperator.enabled
-    # https://strimzi.io/quickstarts/ - Kafka op
   - name: eck-operator
     repository: https://helm.elastic.co
     condition: elasticSearchOperator.enabled

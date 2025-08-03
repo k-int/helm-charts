@@ -1,0 +1,7 @@
+kind: KongPluginInstallation
+apiVersion: gateway-operator.konghq.com/v1alpha1
+metadata:
+  name: kong-ki-selfhost-router
+spec:
+  image: docker.libsdev.k-int.com/knowledgeintegration/kong-ki-selfhost-router:latest
+

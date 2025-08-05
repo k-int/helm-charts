@@ -3,76 +3,28 @@ entries:
   ki-selfhost-operator:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-05T05:39:59.799620474+01:00"
+    created: "2025-08-05T05:50:55.558773359+01:00"
     dependencies:
     - condition: elasticSearchOperator.enabled
       name: eck-operator
       repository: https://helm.elastic.co
       version: 2.14.0
     description: A Helm chart the Knowledge Integration Self-Hosting Operator
-    digest: c5860b8a478dcfb12a8371e5778d6c56669c606bc6cb9c8210e5a72c68608325
+    digest: ddba2d9a6a01806f6da0e9b66252238f23a8a48b86d47773c8480c14d4ec697d
     name: ki-selfhost-operator
     type: application
     urls:
-    - ki-selfhost-operator-0.3.0.tgz
-    version: 0.3.0
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2025-08-05T05:39:59.780526359+01:00"
-    dependencies:
-    - condition: elasticSearchOperator.enabled
-      name: eck-operator
-      repository: https://helm.elastic.co
-      version: 2.14.0
-    description: A Helm chart the Knowledge Integration Self-Hosting Operator
-    digest: d1c76167328d3198c4e89c403863b520139fed2997a5473c20a8f65c575a67f4
-    name: ki-selfhost-operator
-    type: application
-    urls:
-    - ki-selfhost-operator-0.2.0.tgz
-    version: 0.2.0
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2025-08-05T05:39:59.765767441+01:00"
-    dependencies:
-    - condition: postgresOperator.enabled
-      name: pgo
-      repository: oci://registry.developers.crunchydata.com/crunchydata
-      version: 5.6.1
-    - condition: kongOperator.enabled
-      name: gateway-operator
-      repository: https://charts.konghq.com
-      version: 0.2.1
-    - condition: elasticSearchOperator.enabled
-      name: eck-operator
-      repository: https://helm.elastic.co
-      version: 2.14.0
-    description: A Helm chart the Knowledge Integration Self-Hosting Operator
-    digest: 9d46167cce4a156e73c300462cad14dc3a1eaf2410dd5d9690b81013a30df9b5
-    name: ki-selfhost-operator
-    type: application
-    urls:
-    - ki-selfhost-operator-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-08-05T05:39:59.714223096+01:00"
-    description: A Helm chart for Kubernetes
-    digest: fb309156e9202e7975a318d602e6e173d94ef27642faf4031c05bf2d6daaa90c
-    name: ki-selfhost-operator
-    type: application
-    urls:
-    - ki-selfhost-operator-0.1.0.tgz
-    version: 0.1.0
+    - ki-selfhost-operator-0.3.1.tgz
+    version: 0.3.1
   quire:
   - apiVersion: v2
     appVersion: native-0.1
-    created: "2025-08-05T05:39:59.800812848+01:00"
+    created: "2025-08-05T05:50:55.559577573+01:00"
     description: A Helm chart to provision a Quire instance
-    digest: d8c566eb29ff18ffd4b94877d4129d47b4863d708fdcb11f86a349e7a7dd86cf
+    digest: de18c7cf4aa61a8addf8ac3b361e8329fb0b2a6336c6073f78620594cfadaf7b
     name: quire
     type: application
     urls:
     - quire-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-05T05:39:59.7133885+01:00"
+generated: "2025-08-05T05:50:55.535904694+01:00"

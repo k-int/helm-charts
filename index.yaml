@@ -3,7 +3,22 @@ entries:
   ki-selfhost-operator:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-05T05:37:57.103562746+01:00"
+    created: "2025-08-05T05:39:59.799620474+01:00"
+    dependencies:
+    - condition: elasticSearchOperator.enabled
+      name: eck-operator
+      repository: https://helm.elastic.co
+      version: 2.14.0
+    description: A Helm chart the Knowledge Integration Self-Hosting Operator
+    digest: c5860b8a478dcfb12a8371e5778d6c56669c606bc6cb9c8210e5a72c68608325
+    name: ki-selfhost-operator
+    type: application
+    urls:
+    - ki-selfhost-operator-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-08-05T05:39:59.780526359+01:00"
     dependencies:
     - condition: elasticSearchOperator.enabled
       name: eck-operator
@@ -18,7 +33,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-05T05:37:57.088478153+01:00"
+    created: "2025-08-05T05:39:59.765767441+01:00"
     dependencies:
     - condition: postgresOperator.enabled
       name: pgo
@@ -41,7 +56,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-08-05T05:37:57.027045839+01:00"
+    created: "2025-08-05T05:39:59.714223096+01:00"
     description: A Helm chart for Kubernetes
     digest: fb309156e9202e7975a318d602e6e173d94ef27642faf4031c05bf2d6daaa90c
     name: ki-selfhost-operator
@@ -52,12 +67,12 @@ entries:
   quire:
   - apiVersion: v2
     appVersion: native-0.1
-    created: "2025-08-05T05:37:57.104634233+01:00"
+    created: "2025-08-05T05:39:59.800812848+01:00"
     description: A Helm chart to provision a Quire instance
-    digest: bb8a00cfd24d9e662ac3b8b9c55285323c5efa6315f8e2d80039d1eef45a299f
+    digest: d8c566eb29ff18ffd4b94877d4129d47b4863d708fdcb11f86a349e7a7dd86cf
     name: quire
     type: application
     urls:
     - quire-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-05T05:37:57.012625256+01:00"
+generated: "2025-08-05T05:39:59.7133885+01:00"

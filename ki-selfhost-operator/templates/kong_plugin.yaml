@@ -1,7 +1,7 @@
 apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:
-  name: ki-selfhost-plugin
+  name: kong-ki-selfhost-router
   namespace: {{ .Release.Namespace }}
   annotations:
     kubernetes.io/ingress.class: ki-selfhost-gw-class

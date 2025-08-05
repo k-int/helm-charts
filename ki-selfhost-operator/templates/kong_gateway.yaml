@@ -2,7 +2,6 @@ apiVersion: gateway.networking.k8s.io/v1beta1
 kind: Gateway
 metadata:
   name: folio1-gateway
-  namespace: folio1
 spec:
   gatewayClassName: ki-selfhost-gw-class
   listeners:

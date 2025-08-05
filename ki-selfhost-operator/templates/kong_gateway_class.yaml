@@ -7,5 +7,5 @@ spec:
   parametersRef:
      group: gateway-operator.konghq.com
      kind: GatewayConfiguration
-     name: kong-gateway-config
+     name: ki-selfhost-gw-config
      namespace: {{ .Release.Namespace }}

@@ -4,6 +4,8 @@ metadata:
   name: ki-selfhost-operator
   labels:
     app.kubernetes.io/name: ki-selfhost-operator
+  annotations:
+    konghq.com/plugins: kong-ki-selfhost-router
 spec:
   type: "ClusterIP"
   ports:

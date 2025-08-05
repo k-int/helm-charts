@@ -1,10 +1,10 @@
- apiVersion: configuration.konghq.com/v1
- kind: KongPlugin
- metadata:
-   name: ki-selfhost-plugin
-   namespace: {{ .Release.Namespace }}
-   annotations:
-     kubernetes.io/ingress.class: ki-selfhost-gw-class
- plugin: kong-ki-selfhost-router
- config:
-   header_value: my-first-plugin
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: ki-selfhost-plugin
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    kubernetes.io/ingress.class: ki-selfhost-gw-class
+plugin: kong-ki-selfhost-router
+config:
+  header_value: my-first-plugin

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ki-selfhost-operator
   labels:
-    app: ki-selfhost-operator
+    app.kubernetes.io/name: ki-selfhost-operator
 spec:
   revisionHistoryLimit: 1
   selector:

@@ -1,1 +1,4 @@
 # Default values for ki-selfhost-operator.
+
+serviceAccount:
+  name: ki-selfhost-operator-sa

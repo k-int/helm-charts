@@ -4,19 +4,24 @@ metadata:
   name: ki-selfhost-gw-config
 spec:
   dataPlaneOptions:
-     deployment:
-        replicas: 1
-        podTemplateSpec:
-          spec:
-             containers:
-                - name: proxy
-                  image: kong/kong-gateway:3.11
-     pluginsToInstall:
-        - name: kong-ki-selfhost-router
+    deployment:
+      replicas: 1
+      podTemplateSpec:
+        spec:
+          containers:
+            - name: proxy
+              image: kong/kong-gateway:3.11
+    plugins:
+      - name: kong-ki-selfhost-router
+        config:
+          header_value: "WibbleDibbleDoo"
+          config_url: "http://ki-selfhost-operator/_/config"
+    pluginsToInstall:
+      - name: kong-ki-selfhost-router
   controlPlaneOptions:
-     deployment:
-        podTemplateSpec:
-          spec:
-             containers:
-                - name: controller
-                  image: kong/kubernetes-ingress-controller:3.4
+    deployment:
+      podTemplateSpec:
+        spec:
+          containers:
+            - name: controller
+              image: kong/kubernetes-ingress-controller:3.4

@@ -1,0 +1,10 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: kong-ki-selfhost-router
+  annotations:
+    kubernetes.io/ingress.class: kong-ki-selfhost-router
+plugin: kong-ki-selfhost-router
+config:
+  header_value: "WibbleDibbleDoo"
+  config_url: "http://ki-selfhost-operator/_/config"

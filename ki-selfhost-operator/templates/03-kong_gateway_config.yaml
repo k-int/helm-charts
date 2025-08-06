@@ -11,11 +11,11 @@ spec:
           containers:
             - name: proxy
               image: kong/kong-gateway:3.11
-    plugins:
-      - name: kong-ki-selfhost-router
-        config:
-          header_value: "WibbleDibbleDoo"
-          config_url: "http://ki-selfhost-operator/_/config"
+    # plugins:
+    #   - name: kong-ki-selfhost-router
+    #     config:
+    #       header_value: "WibbleDibbleDoo"
+    #       config_url: "http://ki-selfhost-operator/_/config"
     pluginsToInstall:
       - name: kong-ki-selfhost-router
   controlPlaneOptions:

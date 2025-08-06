@@ -4,6 +4,7 @@ metadata:
   name: kong-ki-selfhost-router
   annotations:
     kubernetes.io/ingress.class: kong-ki-selfhost-router
+    namespace: folio1
 plugin: kong-ki-selfhost-router
 config:
   header_value: "WibbleDibbleDoo"

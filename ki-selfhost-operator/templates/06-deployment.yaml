@@ -45,5 +45,4 @@ spec:
               memory: 768Mi
             limits:
               memory: 2Gi
-      serviceAccountName: cheetah-agent-sa
-
+      serviceAccountName: "{{ .Values.ki-selfhost-operator.serviceAccountName }}"

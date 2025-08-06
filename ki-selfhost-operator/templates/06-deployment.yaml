@@ -45,4 +45,4 @@ spec:
               memory: 768Mi
             limits:
               memory: 2Gi
-      serviceAccountName: "{{ .Values.ki-selfhost-operator.serviceAccountName }}"
+      serviceAccountName: {{ include "ki-selfhost-operator.serviceAccountName" . }}

@@ -19,6 +19,9 @@ spec:
         - name: ki-selfhost-operator
           image: docker.libsdev.k-int.com/knowledgeintegration/ki-selfhost-operator:native-next
           imagePullPolicy: Always
+          envFrom:
+            - secretRef:
+                name: ki-selfhost-secrets
           env:
             # TODO: Add and Update for CNPG PG Deployment
             # - name: POD_NAME

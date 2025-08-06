@@ -2,3 +2,5 @@
 
 serviceAccount:
   name: ki-selfhost-operator-sa
+
+ki-selfhost-bootstrap-token: 12345

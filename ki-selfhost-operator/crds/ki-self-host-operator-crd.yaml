@@ -6,10 +6,10 @@ metadata:
 spec:
   group: k-int.com
   names:
-    kind: V1KISelfHostOperator
-    listKind: V1KISelfHostOperatorList
-    plural: ki-self-hosted-operators
-    singular: ki-self-hosted-operator
+    kind: KISelfHostOperator
+    listKind: KISelfHostOperatorList
+    plural: ki-self-hosted-operator
+    singular: ki-self-hosted-operators
   scope: Namespaced
   versions:
     - name: v1

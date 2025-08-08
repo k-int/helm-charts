@@ -8,3 +8,6 @@ rules:
   - apiGroups: [""]
     resources: ["services", "endpoints", "configmaps", "secrets", "pods"]
     verbs: ["get", "watch", "list"]
+  - apiGroups: ["k-int.com"]
+    resources: [ "ki-self-hosted-operators", "ki-self-hosted-operators/status", "ki-self-hosted-operators/finalizers" ]
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]

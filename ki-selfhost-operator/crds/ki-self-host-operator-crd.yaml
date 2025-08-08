@@ -8,8 +8,8 @@ spec:
   names:
     kind: KISelfHostOperator
     listKind: KISelfHostOperatorList
-    plural: ki-self-hosted-operator
-    singular: ki-self-hosted-operators
+    plural: ki-self-hosted-operators
+    singular: ki-self-hosted-operator
   scope: Namespaced
   versions:
     - name: v1

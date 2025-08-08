@@ -6,8 +6,8 @@ metadata:
 spec:
   group: k-int.com
   names:
-    kind: KISelfHostOperator
-    listKind: KISelfHostOperatorList
+    kind: V1KISelfHostOperator
+    listKind: V1KISelfHostOperatorList
     plural: ki-self-hosted-operators
     singular: ki-self-hosted-operator
   scope: Cluster

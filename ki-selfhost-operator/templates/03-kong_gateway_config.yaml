@@ -10,7 +10,8 @@ spec:
         spec:
           containers:
             - name: proxy
-              image: kong/kong-gateway:3.11
+              image: kong/kong:3.9.1
+              # image: kong/kong-gateway:3.11
     # plugins:
     #   - name: kong-ki-selfhost-router
     #     config:

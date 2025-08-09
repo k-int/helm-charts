@@ -4,7 +4,8 @@ metadata:
   name: cheetah-bootstrap-http-route
 spec:
   parentRefs:
-    - name: ki-selfhost-gw-class
+    # - name: ki-selfhost-gw-class
+    - name: folio1-gateway
   hostnames:
     - "bootstrap.localtest.me"
   rules:

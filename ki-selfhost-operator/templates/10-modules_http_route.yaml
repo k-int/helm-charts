@@ -6,7 +6,8 @@ metadata:
     konghq.com/plugins: kong-ki-selfhost-router
 spec:
   parentRefs:
-    - name: ki-selfhost-gw-class
+    # - name: ki-selfhost-gw-class
+    - name: folio1-gateway
   hostnames:
     - "*.api.localtest.me"
   rules:

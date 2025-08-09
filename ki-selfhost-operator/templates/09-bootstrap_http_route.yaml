@@ -1,0 +1,23 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: cheetah-bootstrap-http-route
+spec:
+  parentRefs:
+    - name: ki-selfhost-gw-class
+  hostnames:
+    - "bootstrap.localtest.me"
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /bootstrap
+      filters:
+        - type: URLRewrite
+          urlRewrite:
+            path:
+              type: ReplacePrefixMatch
+              replacePrefixMatch: /_/bootstrap
+      backendRefs:
+        - name: ki-selfhost-operator
+          port: 8080

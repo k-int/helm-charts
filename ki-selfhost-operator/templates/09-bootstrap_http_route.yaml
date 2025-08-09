@@ -12,12 +12,12 @@ spec:
         - path:
             type: PathPrefix
             value: /
-      filters:
-        - type: URLRewrite
-          urlRewrite:
-            path:
-              type: ReplacePrefixMatch
-              replacePrefixMatch: /_/bootstrap
+      # filters:
+      #   - type: URLRewrite
+      #     urlRewrite:
+      #       path:
+      #         type: ReplacePrefixMatch
+      #         replacePrefixMatch: /_/bootstrap
       backendRefs:
         - name: ki-selfhost-operator
           port: 8080

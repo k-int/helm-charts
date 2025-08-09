@@ -5,12 +5,12 @@ metadata:
 spec:
   gatewayClassName: ki-selfhost-gw-class
   listeners:
-    - name: http-bootstrap
+    - name: http
       protocol: HTTP
       port: 81
-      hostname: "bootstrap.localtest.me"
-    - name: http-modules
-      protocol: HTTP
-      port: 81
-      hostname: "*.api.localtest.me"
+    #  hostname: "bootstrap.localtest.me"
+    #- name: http-modules
+    #  protocol: HTTP
+    #  port: 81
+    #  hostname: "*.api.localtest.me"
 

@@ -1,0 +1,73 @@
+# myapp-crd.yaml
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: ki-self-hosted-operators.k-int.com
+spec:
+  group: k-int.com
+  names:
+    kind: KISelfHostTenant
+    listKind: KISelfHostTenantList
+    plural: ki-self-hosted-tenants
+    singular: ki-self-hosted-tenant
+  scope: Namespaced
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                tenantId:
+                  type: string
+                userPolicy:
+                  type: string
+                  description: If users should be auto provisioned (demo etc), or normal user flows
+                authProvider:
+                  type: string
+                  description: Special handling - e.g. auth0
+                authDomain:
+                  type: string
+                  description: OpenID domain/url
+                authClientId:
+                  type: string
+                  description: OpenID clientId
+                authAudience:
+                  type: string
+                  description: OpenID audience
+                authScope:
+                  type: string
+                  description: OpenID audience
+                origin:
+                  type: string
+                  description: Default home URL for this tenant
+                requiredModules:
+                  type: object
+                  additionalProperties:
+                    type: object
+                    properties:
+                      service-id:
+                        type: string
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
+                replicas:
+                  type: integer
+                contextPrivKey:
+                  type: string
+                contextPubKey:
+                  type: string
+                provisionedModules:
+                  additionalProperties:
+                    type: object
+                    properties:
+                      service-id:
+                        type: string
+                      status:
+                        type: string

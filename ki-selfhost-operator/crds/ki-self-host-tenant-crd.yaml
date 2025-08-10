@@ -24,6 +24,14 @@ spec:
               properties:
                 tenantId:
                   type: string
+                tenantTitle:
+                  type: string
+                tenantSubtitle:
+                  type: string
+                tenantFullLogoURL:
+                  type: string
+                tenantIconURL:
+                  type: string
                 userPolicy:
                   type: string
                   description: If users should be auto provisioned (demo etc), or normal user flows

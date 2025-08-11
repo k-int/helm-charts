@@ -1,0 +1,10 @@
+apiVersion: redis.redis.opstreelabs.in/v1beta2
+kind: Redis
+# Redis = Standalone, RedisCluster/RedisReplication for prod workloads
+metadata:
+  name: redis
+spec:
+  kubernetesConfig:
+    image: quay.io/opstree/redis:7.2.5
+    serviceType: ClusterIP
+  persistenceEnabled: false

@@ -38,7 +38,7 @@ spec:
                   additionalProperties:
                     type: object
                     properties:
-                      module-id:
+                      moduleId:
                         type: string
                       status:
                         type: string

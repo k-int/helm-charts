@@ -3,28 +3,28 @@ entries:
   ki-selfhost-operator:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-12T21:46:19.691761978+01:00"
+    created: "2025-08-15T14:29:26.480953132+01:00"
     dependencies:
     - condition: elasticSearchOperator.enabled
       name: eck-operator
       repository: https://helm.elastic.co
       version: 2.14.0
     description: A Helm chart the Knowledge Integration Self-Hosting Operator
-    digest: 9295824afbb2579583933fb03b4c174675666ff1939f0ba16b79058978875c17
+    digest: 8d4bbcbffccbacaf4e2b3fa19cefde21cf318e78837795ec2821b13057ded2c7
     name: ki-selfhost-operator
     type: application
     urls:
-    - ki-selfhost-operator-0.3.52.tgz
-    version: 0.3.52
+    - ki-selfhost-operator-0.3.53.tgz
+    version: 0.3.53
   quire:
   - apiVersion: v2
     appVersion: native-0.1
-    created: "2025-08-12T21:46:19.692244181+01:00"
+    created: "2025-08-15T14:29:26.481310227+01:00"
     description: A Helm chart to provision a Quire instance
-    digest: 82e6903edb12a3c4a0d66661346fda4624020f0e55411df9dbd3cb5426609d12
+    digest: 9593ede5953e5ed5a5a427b9b3cdbf024f3401e906a9e4d663cbcae663e19d01
     name: quire
     type: application
     urls:
     - quire-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-12T21:46:19.676366154+01:00"
+generated: "2025-08-15T14:29:26.472413663+01:00"

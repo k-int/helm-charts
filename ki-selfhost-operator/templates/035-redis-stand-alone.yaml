@@ -6,18 +6,8 @@ metadata:
 spec:
   redisConfig:         # optional: extra redis.conf settings
     additionalRedisConfig: ""  # leave blank for defaults
+    redisPort: 6379
   kubernetesConfig:
+    # image: quay.io/opstree/redis
     image: redis:7.2.5           # or whatever version you prefer
     imagePullPolicy: IfNotPresent
-  # redisExporter:
-  #  enabled: false               # disable metrics exporter
-  # storage:
-  #   volumeClaimTemplate:
-  #     spec:
-  #       accessModes: ["ReadWriteOnce"]
-  #       resources:
-  #         requests:
-  #           storage: 1Gi
-  # # Replication settings
-  # clusterSize: 1                  # 1 pod = standalone
-  # redisLeader: redis-standalone

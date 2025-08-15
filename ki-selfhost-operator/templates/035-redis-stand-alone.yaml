@@ -9,8 +9,8 @@ spec:
   kubernetesConfig:
     image: redis:7.2.5           # or whatever version you prefer
     imagePullPolicy: IfNotPresent
-  redisExporter:
-    enabled: false               # disable metrics exporter
+  # redisExporter:
+  #  enabled: false               # disable metrics exporter
   # storage:
   #   volumeClaimTemplate:
   #     spec:
@@ -19,5 +19,5 @@ spec:
   #         requests:
   #           storage: 1Gi
   # # Replication settings
-  clusterSize: 1                  # 1 pod = standalone
-  redisLeader: redis-standalone
+  # clusterSize: 1                  # 1 pod = standalone
+  # redisLeader: redis-standalone

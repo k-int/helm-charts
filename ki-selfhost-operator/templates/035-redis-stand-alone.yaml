@@ -5,7 +5,7 @@ metadata:
   name: redis
 spec:
   redisConfig:         # optional: extra redis.conf settings
-    additionalRedisConfig: ""  # leave blank for defaults
+    # additionalRedisConfig: ""  # leave blank for defaults
     redisPort: 6379
   kubernetesConfig:
     # image: quay.io/opstree/redis

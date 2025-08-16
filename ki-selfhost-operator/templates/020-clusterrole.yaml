@@ -12,5 +12,5 @@ rules:
     resources: ["leases"]
     verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
   - apiGroups: ["k-int.com"]
-    resources: [ "ki-self-hosted-operators", "ki-self-hosted-operators/status", "ki-self-hosted-operators/finalizers" ]
+    resources: [ "ki-self-hosted-operators", "ki-self-hosted-operators/status", "ki-self-hosted-operators/finalizers", "ki-self-hosted-tenants", "ki-self-hosted-tenants/status", "ki-self-hosted-tenants/finalizers" ]
     verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]

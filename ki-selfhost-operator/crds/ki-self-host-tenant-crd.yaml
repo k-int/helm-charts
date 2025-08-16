@@ -58,7 +58,7 @@ spec:
                   additionalProperties:
                     type: object
                     properties:
-                      service-id:
+                      serviceId:
                         type: string
             status:
               type: object
@@ -76,7 +76,7 @@ spec:
                   additionalProperties:
                     type: object
                     properties:
-                      service-id:
+                      serviceId:
                         type: string
                       status:
                         type: string

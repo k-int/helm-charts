@@ -6,7 +6,7 @@ metadata:
 spec:
   redisConfig:         # optional: extra redis.conf settings
     # additionalRedisConfig: ""  # leave blank for defaults
-    redisPort: 6379
+    # redisPort: 6379
   kubernetesConfig:
     # image: quay.io/opstree/redis
     image: redis:7.2.5           # or whatever version you prefer

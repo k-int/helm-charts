@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: ki-selfhost-operator
-          image: docker.libsdev.k-int.com/knowledgeintegration/ki-selfhost-operator@sha256:17160fa2b9fcc17b98f8e34a52549443c1dea423f87c6cbbbde17ac3a169c289
+          image: docker.libsdev.k-int.com/knowledgeintegration/ki-selfhost-operator@sha256:87b23f9d08406fe8f9de82f62463b92be4e94e3aa94e7bfa77a4053c57e18f2a
           # image: docker.libsdev.k-int.com/knowledgeintegration/ki-selfhost-operator:native-next
           imagePullPolicy: Always
           envFrom:

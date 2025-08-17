@@ -1,29 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ki-selfhost-operator
+  name: ki-selfhost-tenant-operator
   labels:
-    app.kubernetes.io/name: ki-selfhost-operator
+    app.kubernetes.io/name: ki-selfhost-tenant-operator
 spec:
   revisionHistoryLimit: 1
   selector:
     matchLabels:
-      app: ki-selfhost-operator
+      app: ki-selfhost-tenant-operator
   replicas: 1
   template:
     metadata:
       labels:
-        app: ki-selfhost-operator
+        app: ki-selfhost-tenant-operator
     spec:
       containers:
-        - name: ki-selfhost-operator
-          image: docker.libsdev.k-int.com/knowledgeintegration/ki-selfhost-operator@sha256:4543d6a57b6e73424481e498b316cca33c9a2a5ba4551573edc7d0fe11933e49
+        - name: ki-selfhost-tenant-operator
+          image: "{{ .Values.kishOperatorImage.ref }}"
           # image: docker.libsdev.k-int.com/knowledgeintegration/ki-selfhost-operator:native-next
           imagePullPolicy: Always
           envFrom:
             - secretRef:
                 name: ki-selfhost-secrets
           env:
+            - name: OPERATOR_KIND
+              value: "tenant"
             # TODO: Add and Update for CNPG PG Deployment
             # - name: POD_NAME
             #   valueFrom:

@@ -1,0 +1,13 @@
+apiVersion: redis.redis.opstreelabs.in/v1beta2
+kind: Redis
+# Redis = Standalone, RedisCluster/RedisReplication for prod workloads
+metadata:
+  name: redis
+spec:
+  redisConfig:         # optional: extra redis.conf settings
+    # additionalRedisConfig: ""  # leave blank for defaults
+    # redisPort: 6379
+  kubernetesConfig:
+    # image: quay.io/opstree/redis
+    image: redis:7.2.5           # or whatever version you prefer
+    imagePullPolicy: IfNotPresent

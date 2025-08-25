@@ -9,7 +9,7 @@ load balancer resources, it is less confusing to install only one.
 Update chart with
 
     helm dependency update ./ki-selfhost-operator  (Or build)
-    helm package quire ki-selfhost-operator
+    helm package quire ki-selfhost-operator-istio
     helm repo index .
 
 ## Usage

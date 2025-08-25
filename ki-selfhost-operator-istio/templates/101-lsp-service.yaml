@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lsp
+# This service is a pure virtual service that serves as a hook upon which we can hang various 
+# istio VirtualServices to route to specific modules based on the path prefix
+spec:
+  clusterIP: None        # headless: just gives you the DNS name "okapi"
+  ports:
+  - name: http
+    port: 8080

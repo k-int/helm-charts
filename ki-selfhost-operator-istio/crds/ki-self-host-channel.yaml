@@ -34,8 +34,8 @@ spec:
                 phase:
                   type: string
                 channelModules:
-                  type: object
-                  additionalProperties:
+                  type: array
+                  items:
                     type: object
                     properties:
                       id:

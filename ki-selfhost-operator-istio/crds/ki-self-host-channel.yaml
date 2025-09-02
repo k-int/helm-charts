@@ -44,3 +44,9 @@ spec:
                         type: string
                       status:
                         type: string
+                      moduleName:
+                        type: string
+                      moduleVersion:
+                        type: string
+                      image:
+                        type: string

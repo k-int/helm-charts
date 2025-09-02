@@ -80,3 +80,5 @@ spec:
                         type: string
                       status:
                         type: string
+      subresources:
+        status: {}

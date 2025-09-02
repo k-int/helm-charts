@@ -50,3 +50,5 @@ spec:
                         type: string
                       image:
                         type: string
+      subresources:
+        status: {}

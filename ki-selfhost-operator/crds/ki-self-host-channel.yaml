@@ -30,15 +30,32 @@ spec:
                   type: string
             status:
               type: object
+              additionalProperties: true
               properties:
                 phase:
                   type: string
                 channelModules:
-                  type: object
-                  additionalProperties:
+                  type: array
+                  description: List of modules associated with this channel.
+                  required:
+                    - id
+                    - moduleId
+                    - moduleName
+                    - moduleVersion
+                    - image
+                  items:
                     type: object
                     properties:
+                      id:
+                        type: string
                       moduleId:
+                        type: string
+                      moduleName:
+                        type: string
+                      moduleVersion:
+                        type: string
+                      image:
                         type: string
                       status:
                         type: string
+                    additionalProperties: true

@@ -18,10 +18,10 @@ spec:
       schema:
         openAPIV3Schema:
           type: object
-          additionalProperties: true
           properties:
             spec:
               type: object
+              additionalProperties: true
               properties:
                 channelId:
                   type: string

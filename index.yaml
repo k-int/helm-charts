@@ -3,7 +3,7 @@ entries:
   ki-selfhost-operator-istio:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-03T15:10:46.795344779+01:00"
+    created: "2025-09-03T16:40:11.52468462+01:00"
     dependencies:
     - condition: elasticSearchOperator.enabled
       name: eck-operator
@@ -11,21 +11,21 @@ entries:
       version: 2.14.0
     description: A Helm chart the Knowledge Integration Self-Hosting Operator for
       ISTIO deployments
-    digest: 33aa2c6e575636c32f9a334b7a94c3b6df494c4843fff8276955ab03c438ffa9
+    digest: 2bdc4eafd0b9304a1f1000565354ad83edf58a9f0d4f7b034fd9dd9ba59731a4
     name: ki-selfhost-operator-istio
     type: application
     urls:
-    - ki-selfhost-operator-istio-0.0.10.tgz
-    version: 0.0.10
+    - ki-selfhost-operator-istio-0.0.11.tgz
+    version: 0.0.11
   quire:
   - apiVersion: v2
     appVersion: native-0.1
-    created: "2025-09-03T15:10:46.796574902+01:00"
+    created: "2025-09-03T16:40:11.525421418+01:00"
     description: A Helm chart to provision a Quire instance
-    digest: 61e51a2e42e30c271d91cd427da1700ec4ec9d925f8659778fea4f79eeedc07d
+    digest: e832b8dd3f3791e695ae0c88c7c594d2f8a72c896c5b44742043384f7cc19d85
     name: quire
     type: application
     urls:
     - quire-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-03T15:10:46.786149618+01:00"
+generated: "2025-09-03T16:40:11.511794866+01:00"

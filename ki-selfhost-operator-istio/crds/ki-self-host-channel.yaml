@@ -18,6 +18,7 @@ spec:
       schema:
         openAPIV3Schema:
           type: object
+          additionalProperties: true
           properties:
             spec:
               type: object
@@ -30,13 +31,21 @@ spec:
                   type: string
             status:
               type: object
+              additionalProperties: true
               properties:
                 phase:
                   type: string
                 channelModules:
                   type: array
+                  required:
+                    - id
+                    - moduleId
+                    - moduleName
+                    - moduleVersion
+                    - image
                   items:
                     type: object
+                    additionalProperties: true
                     properties:
                       id:
                         type: string

@@ -1,0 +1,10 @@
+apiVersion: v1
+metadata:
+  name: postgres-kisho-app
+  labels:
+    cnpg.io/reload: "true"
+stringData:
+  username: kisho
+  password: kisho
+kind: Secret
+type: kubernetes.io/basic-auth

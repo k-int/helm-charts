@@ -35,6 +35,9 @@ spec:
               properties:
                 phase:
                   type: string
+                lastRegistryPoll:
+                  type: string
+                  format: date-time
                 channelModules:
                   type: array
                   required:

@@ -1,0 +1,27 @@
+piVersion: v1
+kind: ConfigMap
+metadata:
+  name: kisho-service-cm
+data:
+  DB_DATABASE: "kisho"
+  DB_HOST: "postgres-kisho-rw"
+  DB_MAXPOOLSIZE: "20"
+  DB_PORT: "5432"
+  DB_USERNAME: "kisho"
+  DB_PASSWORD: "kisho"
+  DATASOURCE_URL: "jdbc:postgresql://kisho:5432/kisho"
+  DATASOURCE_USERNAME: "kisho"
+  DATASOURCE_PASSWORD: "kisho"
+  # EVENTS_PUBLISHER_BOOTSTRAP_SERVERS: "default-kafka.${kafka_ns}:9092"
+  # EVENTS_CONSUMER_BOOTSTRAP_SERVERS: "default-kafka.${kafka_ns}:9092"
+  # EVENTS_PUBLISHER_ZK_CONNECT: "default-zookeeper.${kafka_ns}:2181"
+  # EVENTS_CONSUMER_ZK_CONNECT: "default-zookeeper.${kafka_ns}:2181"
+  # OKAPI_CONFIG_DB: "okapi_1"
+  # OKAPI_SERVICE_HOST: "okapi.${cluster_ns}-dev-cluster-a"
+  # OKAPI_HOST: "okapi.${cluster_ns}"
+  # OKAPI_URL: "http://okapi.${cluster_ns}:9130"
+  # OKAPI_SERVICE_PORT: "9130"
+  # OKAPI_PORT: "9130"
+  # KAFKA_HOST: "default-kafka.${kafka_ns}"
+  # KAFKA_PORT: "9092"
+  # ELASTICSEARCH_URL: "http://elasticsearch.${es_ns}:9200"

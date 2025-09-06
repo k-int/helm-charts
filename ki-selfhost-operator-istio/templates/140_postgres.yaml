@@ -1,0 +1,55 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: postgres-kisho
+  annotations:
+    cnpg.io/skipWalArchiving: "enabled"
+spec:
+  instances: 1
+  storage:
+    size: 1000Gi
+    storageClass: local-path
+  #  storageClass: fast10-local-path
+  # managed:
+  #   roles:
+  #     - name: vault
+  #       ensure: present
+  #       login: true
+  #       superuser: true
+  #       passwordSecret:
+  #         name: sharedcnpg-vault-user
+
+  bootstrap:
+    initdb:
+      database: kisho
+      owner: kisho
+      secret:
+        name: postgres-kisho-app
+      # postInitSQL:
+      #   - create database vufind
+      #   - create user vufind with PASSWORD 'vufind'
+      #   - grant all privileges on database vufind to vufind
+        # Bootstrapping the vufind user in this way we need to run the pg_iinit script manually.
+        # It's in the plka_vufind_docker project init_scripts folder and can be run with
+
+  postgresql:
+    pg_hba:
+      - host all all all md5
+      - host all all 0.0.0.0/0 md5
+      - host all all ::0/0 md5
+      #- host all all 0.0.0.0/0 scram-sha-256
+      #- host all all ::0/0 scram-sha-256
+      #- host all all all scram-sha-256
+
+  # https://cloudnative-pg.io/documentation/1.25/samples/cluster-example-full.yaml
+  # https://cloudnative-pg.io/documentation/1.25/bootstrap/
+  enableSuperuserAccess: true
+  superuserSecret:
+    name: postgres-kisho-superuser
+
+  primaryUpdateStrategy: unsupervised
+
+  # affinity:
+  #   nodeSelector:
+  #     workload-role: db
+

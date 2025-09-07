@@ -30,7 +30,7 @@ spec:
     initdb:
       database: kisho
       owner: kisho
-	# Rely upon cnpg generating the secret for us
+  # Rely upon cnpg generating the secret for us
   #    secret:
   #      name: postgres-kisho-app
       # postInitSQL:
@@ -44,7 +44,7 @@ spec:
   # https://cloudnative-pg.io/documentation/1.25/samples/cluster-example-full.yaml
   # https://cloudnative-pg.io/documentation/1.25/bootstrap/
   enableSuperuserAccess: true
-	# Rely upon cnpg generating the secret for us
+  # Rely upon cnpg generating the secret for us
   #superuserSecret:
   #  name: postgres-kisho-superuser
 

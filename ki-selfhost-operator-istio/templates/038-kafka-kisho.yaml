@@ -1,0 +1,23 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaUser
+metadata:
+  name: kisho-kafka-user
+  labels:
+    strimzi.io/cluster: kisho-kafka
+spec:
+  authentication:
+    type: scram-sha-512
+  authorization:
+    type: simple
+    acls:
+      # Grant broad access for dev; tighten for prod
+      - resource:
+          type: topic
+          name: "*"
+          patternType: literal
+        operation: All
+      - resource:
+          type: group
+          name: "*"
+          patternType: literal
+        operation: All

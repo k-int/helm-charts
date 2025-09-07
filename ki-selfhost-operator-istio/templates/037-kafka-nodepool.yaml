@@ -1,0 +1,23 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaNodePool
+metadata:
+  name: combined
+  labels:
+    strimzi.io/cluster: kisho-kafka
+spec:
+  replicas: 3
+  roles:
+    - controller
+    - broker
+  # storage:
+  #   type: jbod
+  #   volumes:
+  #     - id: 0
+  #       type: persistent-claim
+  #       size: 100Gi
+  #       deleteClaim: false
+  storage:
+    type: persistent-claim
+    size: 100Gi
+    deleteClaim: false
+    class: local-path

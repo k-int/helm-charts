@@ -9,7 +9,7 @@ data:
   DB_PORT: "5432"
   DB_USERNAME: "kisho"
   DB_PASSWORD: "kisho"
-  DATASOURCE_URL: "jdbc:postgresql://kisho:5432/kisho"
+  DATASOURCE_URL: "jdbc:postgresql://postgres-kisho-rw:5432/kisho"
   DATASOURCE_USERNAME: "kisho"
   DATASOURCE_PASSWORD: "kisho"
   # EVENTS_PUBLISHER_BOOTSTRAP_SERVERS: "default-kafka.${kafka_ns}:9092"

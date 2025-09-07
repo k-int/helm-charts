@@ -30,8 +30,9 @@ spec:
     initdb:
       database: kisho
       owner: kisho
-      secret:
-        name: postgres-kisho-app
+	# Rely upon cnpg generating the secret for us
+  #    secret:
+  #      name: postgres-kisho-app
       # postInitSQL:
       #   - create database vufind
       #   - create user vufind with PASSWORD 'vufind'
@@ -43,8 +44,9 @@ spec:
   # https://cloudnative-pg.io/documentation/1.25/samples/cluster-example-full.yaml
   # https://cloudnative-pg.io/documentation/1.25/bootstrap/
   enableSuperuserAccess: true
-  superuserSecret:
-    name: postgres-kisho-superuser
+	# Rely upon cnpg generating the secret for us
+  #superuserSecret:
+  #  name: postgres-kisho-superuser
 
   primaryUpdateStrategy: unsupervised
 

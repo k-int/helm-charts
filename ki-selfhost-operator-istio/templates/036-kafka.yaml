@@ -15,7 +15,7 @@ spec:
         port: 9092
         type: internal
         tls: false
-				# Comment out these to run kafka in the clear
+        # Comment out these to run kafka in the clear
         # authentication:
         #   type: scram-sha-512
     # authorization:

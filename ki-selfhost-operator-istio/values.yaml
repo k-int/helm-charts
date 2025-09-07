@@ -6,4 +6,4 @@ serviceAccount:
 kiSelfhostBootstrapToken: 12345
 
 kishOperatorImage:
-  ref: "docker.libsdev.k-int.com/knowledgeintegration/ki-selfhost-operator@sha256:a027b762b05cb1bc8fa1801e977268499dc858a0266a952b28a4b5428420040c"
+  ref: "docker.libsdev.k-int.com/knowledgeintegration/ki-selfhost-operator@sha256:5492096f160ef23024c579c83da242e58f879961cfe5f6eaeddafbd7d6bc8c91"

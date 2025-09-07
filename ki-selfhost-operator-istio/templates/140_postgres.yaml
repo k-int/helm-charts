@@ -18,6 +18,13 @@ spec:
   #       superuser: true
   #       passwordSecret:
   #         name: sharedcnpg-vault-user
+  postgresql:
+    parameters:
+      password_encryption: scram-sha-256
+    pg_hba:
+      - hostssl all all all scram-sha-256
+      - hostssl all all 0.0.0.0/0 scram-sha-256
+      - hostssl all all ::0/0 scram-sha-256
 
   bootstrap:
     initdb:
@@ -32,14 +39,6 @@ spec:
         # Bootstrapping the vufind user in this way we need to run the pg_iinit script manually.
         # It's in the plka_vufind_docker project init_scripts folder and can be run with
 
-  # postgresql:
-  #   pg_hba:
-  #     - host all all all md5
-  #     - host all all 0.0.0.0/0 md5
-  #     - host all all ::0/0 md5
-  #     #- host all all 0.0.0.0/0 scram-sha-256
-  #     #- host all all ::0/0 scram-sha-256
-  #     #- host all all all scram-sha-256
 
   # https://cloudnative-pg.io/documentation/1.25/samples/cluster-example-full.yaml
   # https://cloudnative-pg.io/documentation/1.25/bootstrap/

@@ -22,9 +22,9 @@ spec:
     parameters:
       password_encryption: scram-sha-256
     pg_hba:
-      - hostssl all all all scram-sha-256
-      - hostssl all all 0.0.0.0/0 scram-sha-256
-      - hostssl all all ::0/0 scram-sha-256
+      - host all all all scram-sha-256
+      - host all all 0.0.0.0/0 scram-sha-256
+      - host all all ::0/0 scram-sha-256
 
   bootstrap:
     initdb:

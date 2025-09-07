@@ -3,8 +3,8 @@ metadata:
   name: postgres-kisho-app
   labels:
     cnpg.io/reload: "true"
-stringData:
-  username: kisho
-  password: kisho
 kind: Secret
 type: kubernetes.io/basic-auth
+stringData:
+  username: kisho
+  password: SCRAM-SHA-256$4096:EQdhcYW7nsRUd+MU1cAcyw==$aFPi8O/fADkZBZ/ruk2XvXerHAk2Y3dbqtY9ROASlmw=:qUJHKetHKHnZPVVCtLezYHknXeQl+/aM64i2nncMC4w=

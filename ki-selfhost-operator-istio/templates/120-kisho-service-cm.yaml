@@ -7,7 +7,7 @@ data:
   EVENTS_CONSUMER_BOOTSTRAP_SERVERS: "kisho-kafka-kafka-bootstrap:9092"
   EVENTS_PUBLISHER_ZK_CONNECT: "kisho-kafka-kafka-brokers:9091"
   EVENTS_CONSUMER_ZK_CONNECT: "kisho-kafka-kafka-brokers:9091"
-	KAFKA_HOST: "kisho-kafka-kafka-bootstrap"
+  KAFKA_HOST: "kisho-kafka-kafka-bootstrap"
   KAFKA_PORT: "9092"
   # OKAPI_CONFIG_DB: "okapi_1"
   # OKAPI_SERVICE_HOST: "okapi.${cluster_ns}-dev-cluster-a"

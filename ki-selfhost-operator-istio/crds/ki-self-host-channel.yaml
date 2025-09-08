@@ -40,14 +40,14 @@ spec:
                   format: date-time
                 channelModules:
                   type: array
-                  required:
-                    - id
-                    - moduleId
-                    - moduleName
-                    - moduleVersion
-                    - image
                   items:
                     type: object
+                    required:
+                      - id
+                      - moduleId
+                      - moduleName
+                      - moduleVersion
+                      - image
                     additionalProperties: true
                     properties:
                       id:

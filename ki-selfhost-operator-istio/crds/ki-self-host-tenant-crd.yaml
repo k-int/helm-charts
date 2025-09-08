@@ -53,13 +53,39 @@ spec:
                 origin:
                   type: string
                   description: Default home URL for this tenant
-                requiredModules:
-                  type: object
-                  additionalProperties:
+                defaultSyncMode:
+                  type: string
+                  description: The default action for syncing - just install or track the channel or NONE default
+                  enum:
+                    - install
+                    - track
+                    - none
+                sysadmins:
+                  type: array
+                  description: "List of superusers with name and email"
+                  items:
                     type: object
+                    properties:
+                      name:
+                        type: string
+                        description: "Superuser's display name"
+                      email:
+                        type: string
+                        format: email
+                        description: "Superuser's email address"
+                    required:
+                      - name
+                      - email
+                requiredModules:
+                  type: array
+                  items:
+                    type: object
+                    additionalProperties: true
                     properties:
                       serviceId:
                         type: string
+                    required:
+                      - serviceId
             status:
               type: object
               properties:
@@ -72,9 +98,10 @@ spec:
                 contextPubKey:
                   type: string
                 provisionedModules:
-                  type: object
-                  additionalProperties:
+                  type: array
+                  items:
                     type: object
+                    additionalProperties:
                     properties:
                       serviceId:
                         type: string

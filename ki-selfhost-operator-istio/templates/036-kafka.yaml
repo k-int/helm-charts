@@ -27,6 +27,13 @@ spec:
       transaction.state.log.min.isr: 2
       default.replication.factor: 3
       min.insync.replicas: 2
+    resources:
+      requests:
+        cpu: "500m"
+        memory: "2Gi"
+      limits:
+        cpu: "1"
+        memory: "2Gi"
   entityOperator:
     topicOperator: {}
     userOperator: {}

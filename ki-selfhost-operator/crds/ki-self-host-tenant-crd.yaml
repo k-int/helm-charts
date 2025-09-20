@@ -53,9 +53,16 @@ spec:
                 origin:
                   type: string
                   description: Default home URL for this tenant
+                channel:
+                  type: string
+                  description: The channel this tenant is subscribed to
+                moduleSelectors:
+                  type: array
+                  items:
+                    type: string
                 requiredModules:
-                  type: object
-                  additionalProperties:
+                  type: array
+                  items:
                     type: object
                     properties:
                       serviceId:
@@ -72,8 +79,8 @@ spec:
                 contextPubKey:
                   type: string
                 provisionedModules:
-                  type: object
-                  additionalProperties:
+                  type: array
+                 items:
                     type: object
                     properties:
                       serviceId:

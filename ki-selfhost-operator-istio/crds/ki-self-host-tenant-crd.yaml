@@ -60,6 +60,13 @@ spec:
                     - install
                     - track
                     - none
+                channel:
+                  type: string
+                  description: The channel this tenant is subscribed to
+                moduleSelectors:
+                  type: array
+                  items:
+                    type: string
                 sysadmins:
                   type: array
                   description: "List of superusers with name and email"

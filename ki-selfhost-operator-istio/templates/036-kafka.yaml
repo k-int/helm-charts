@@ -32,8 +32,8 @@ spec:
         cpu: "500m"
         memory: "2Gi"
       limits:
-        cpu: "1"
-        memory: "2Gi"
+        cpu: "2"
+        memory: "4Gi"
   entityOperator:
     topicOperator: {}
     userOperator: {}

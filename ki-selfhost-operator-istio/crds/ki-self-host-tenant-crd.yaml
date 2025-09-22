@@ -104,15 +104,27 @@ spec:
                   type: string
                 contextPubKey:
                   type: string
-                provisionedModules:
+                modules:
                   type: array
                   items:
                     type: object
                     additionalProperties:
                     properties:
-                      serviceId:
-                        type: string
-                      status:
-                        type: string
+                      requirement:
+                        type: object
+                        additionalProperties:
+                        properties: 
+                          serviceId:
+                            type: string
+                          status:
+                            type: string
+                      current:
+                        type: object
+                        additionalProperties:
+                        properties: 
+                          serviceId:
+                            type: string
+                          status:
+                            type: string
       subresources:
         status: {}

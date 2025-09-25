@@ -116,5 +116,7 @@ spec:
                         type: string
                       status:
                         type: string
+                      message:
+                        type: string
       subresources:
         status: {}

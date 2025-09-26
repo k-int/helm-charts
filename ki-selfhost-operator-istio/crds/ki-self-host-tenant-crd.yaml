@@ -118,7 +118,7 @@ spec:
                         type: string
                       message:
                         type: string
-                      message:
-                        type: jobName
+                      jobName:
+                        type: string
       subresources:
         status: {}
